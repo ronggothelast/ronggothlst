@@ -1,0 +1,13 @@
+# Node modules
+node_modules/
+
+# Output build (jika tidak ingin disimpan)
+src/output.css
+
+# System/editor
+.DS_Store
+*.log
+*.swp
+
+# Tailwind cache (jika muncul)
+.tailwind-cache/

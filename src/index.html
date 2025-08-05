@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <title>ronggothlst</title>
+    <style>
+      @keyframes blink {
+        0%,
+        100% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0;
+        }
+      }
+      .animate-blink {
+        animation: blink 1s step-start infinite;
+      }
+
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body class="bg-[#212121] text-white font-interr">
+    <!-- WRAPPER: scrollable fullscreen page with snap -->
+    <div class="h-screen overflow-y-scroll snap-y snap-mandatory scroll-smooth">
+      <!-- SECTION 1 -->
+      <section
+        id="intro"
+        class="h-screen snap-start flex flex-col items-center justify-center px-4"
+      >
+        <div class="text-left max-w-2xl w-full">
+          <p class="text-white/60 text-base mb-10">
+            before anything else, let’s boot up the terminal...
+          </p>
+          <div
+            class="bg-[#2d2d2d] text-sm text-white font-mono rounded-lg border border-white/10 overflow-hidden"
+          >
+            <!-- Status Bar -->
+            <div
+              class="flex items-center justify-between px-3 py-2 bg-[#1e1e1e] border-b border-white/10"
+            >
+              <div
+                class="flex gap-3 text-white text-sm leading-none select-none"
+              >
+                <span class="font-semibold">X</span>
+                <span class="font-semibold">–</span>
+                <span class="font-semibold">O</span>
+              </div>
+              <div class="text-xs text-white/60 font-semibold select-none">
+                Terminal
+              </div>
+              <div class="w-12"></div>
+            </div>
+            <!-- Terminal content -->
+            <div class="px-4">
+              <pre class="whitespace-pre-wrap break-words mb-5"><code>
+<span class="text-pink-400">ronggo@localhost</span> <span class="text-blue-400">~</span> <span class="text-green-400">❯</span> whoami
+Ronggo Fattah Abdullah
+
+<span class="text-pink-400">ronggo@localhost</span> <span class="text-blue-400">~</span> <span class="text-green-400">❯</span> echo $EMAIL
+ronggothelast@gmail.com
+
+<span class="text-pink-400">ronggo@localhost</span> <span class="text-blue-400">~</span> <span class="text-green-400">❯</span> echo $LOCATION
+Puri Harmoni 9 Blok E4 no 6, Cikahuripan, Klapanunggal, Kab. Bogor, Indonesia
+
+<span class="text-pink-400">ronggo@localhost</span> <span class="text-blue-400">~</span> <span class="text-green-400">❯</span> cat summary.txt
+Linux enthusiast and junior Web Developer with experience building static websites using native PHP, TailwindCSS, and Bootstrap.
+
+<span class="text-pink-400">ronggo@localhost</span> <span class="text-blue-400">~</span> <span class="text-green-400">❯</span> cat work.txt
+Company : PT Harlindo Jaya  
+Role    : Operations and IT Staff  
+Since   : 2020
+
+<span class="text-pink-400">ronggo@localhost</span> <span class="text-blue-400">~</span> <span class="text-green-400">❯</span> cat education.txt
+[1] Indraprasta PGRI University — Informatics Engineering (Bachelor's Degree, 4th Semester)  
+[2] SMKN 24 East Jakarta — Software Engineering (Graduated: 2020)
+
+<span class="text-pink-400">ronggo@localhost</span> <span class="text-blue-400">~</span> <span class="text-green-400">❯</span> cat skills.txt
+HTML, CSS, Native PHP, Bootstrap, TailwindCSS, Linux
+
+<span class="text-pink-400">ronggo@localhost</span> <span class="text-blue-400">~</span> <span class="text-green-400">❯</span> cat profiles.txt
+GitHub  : https://github.com/ronggothelast <a href="https://github.com/ronggothelast" target="_blank" class="text-white/40 text-xs hover:underline">[open]</a>  
+LinkedIn: https://www.linkedin.com/in/ronggothelast <a href="https://linkedin.com/in/ronggothelast" target="_blank" class="text-white/40 text-xs hover:underline">[open]</a>
+
+<span class="text-pink-400 ">ronggo@localhost</span> <span class="text-blue-400">~</span> <span class="text-green-400">❯</span> <span class="animate-blink">|</span>
+</code></pre>
+            </div>
+          </div>
+        </div>
+        <!-- Scroll down -->
+        <a
+          href="#next"
+          class="mt-10 animate-bounce text-white/40 text-sm hover:text-white transition"
+        >
+          ↓ scroll down
+        </a>
+      </section>
+
+      <!-- SECTION 2 -->
+      <!-- SECTION 2 -->
+      <section
+        id="next"
+        class="h-screen snap-start flex flex-col items-center justify-center px-4"
+      >
+        <div class="text-center text-white/50 text-xl mb-6">
+          Coming soon: Projects, Contact, or More...
+        </div>
+
+        <!-- SCROLL UP LINK -->
+        <a
+          href="#intro"
+          class="animate-bounce text-white/40 text-sm hover:text-white transition"
+        >
+          ↑ back to top
+        </a>
+      </section>
+    </div>
+  </body>
+</html>
